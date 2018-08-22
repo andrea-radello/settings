@@ -1,0 +1,100 @@
+{
+	"ax : Storybook": {
+		"prefix": "ax@sb",
+		"body": [
+			"import { storiesOf } from '@storybook/react'",
+			"import * as React from 'react'",
+			"import host from 'storybook-host'",
+			"import { intlDecorator, muiDecorator } from 'chrome/utils'",
+			"import { Component } from './Component'",
+			"",
+			"const baseProps = {}",
+			"",
+			"storiesOf('Section|Component.SubComponent', module)",
+			".addDecorator(muiDecorator)",
+			".addDecorator(intlDecorator)",
+			".addDecorator(host({}))",
+			".add('base', () => <Component {...baseProps} />)$1"
+		],
+		"description": "Storybook"
+	},
+	"ax : React Stateful Component": {
+		"prefix": "ax@rs",
+		"body": [
+			"/* tslint:disable: no-this no-class */",
+			"import * as React from 'react'",
+			"import injectSheet, { StyleSheet, WithStyles } from 'react-jss'",
+			"import { compose, setDisplayName } from 'recompose'",
+			"",
+			"type OuterProps = Readonly<{}>",
+			"",
+			"type ClassKey = 'root'",
+			"type Props = WithStyles<ClassKey> & OuterProps",
+			"",
+			"type State = Readonly<{}>",
+			"",
+			"class ComponentComp extends React.Component<Props, State> {",
+			"  state: State = {}",
+			"",
+			"  render(): React.ReactNode {",
+			"    const { classes } = this.props",
+			"    return <div className={classes.root} />",
+			"  }",
+			"}",
+			"",
+			"const styles: StyleSheet<ClassKey, OuterProps> = {",
+			"  root: ({}) => ({})",
+			"}",
+			"",
+			"export const Component = compose<Props, OuterProps>(",
+			"  setDisplayName('Component'),",
+			"  injectSheet(styles),",
+			")(ComponentComp)$1"
+		],
+		"description": "React stateful component"
+	},
+	"ax : React Functional Stateless Component": {
+		"prefix": "ax@rf",
+		"body": [
+			"import * as React from 'react'",
+			"import injectSheet, { StyleSheet, WithStyles } from 'react-jss'",
+			"import { compose, setDisplayName } from 'recompose'",
+			"",
+			"type OuterProps = Readonly<{}>",
+			"",
+			"type ClassKey = 'root'",
+			"",
+			"type Props = WithStyles<ClassKey> & OuterProps",
+			"",
+			"const ComponentComp = ({ classes }: Props) => <div className={classes.root} />",
+			"",
+			"const styles: StyleSheet<ClassKey, OuterProps> = {",
+			"  root: ({}) => ({}),",
+			"}",
+			"",
+			"export const Component = compose<Props, OuterProps>(",
+			"  setDisplayName('Component'),",
+			"  injectSheet(styles),",
+			")(ComponentComp)",
+			"$1"
+		],
+		"description": "React functional stateless Component"
+	},
+	"ax : Enzyme ": {
+		"prefix": "ax@en",
+		"body": [
+			"import { shallow } from 'enzyme'",
+			"import * as React from 'react'",
+			"import { Component } from './Component'",
+			"",
+			"describe('<TableCell />', () => {",
+			"  it('should render', () => {",
+			"    const wrapper = shallow(<Component>Component</Component>)",
+			"    expect(wrapper).toMatchSnapshot()",
+			"  })",
+			"})",
+			""
+		],
+		"description": "Test using enzyme"
+	}
+}

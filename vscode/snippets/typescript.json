@@ -1,0 +1,17 @@
+{
+	"ax : Intl messages": {
+		"prefix": "ax@msm",
+		"body": [
+			"import { defineMessages } from 'react-intl'",
+			"",
+			"export const m = defineMessages({",
+			"  toolBar: {",
+			"    id: '',",
+			"    defaultMessage: '',",
+			"  },",
+			"})",
+			""
+		],
+		"description": "Intl messages.ts"
+	}
+}
