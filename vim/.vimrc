@@ -10,9 +10,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
-Plug 'altercation/vim-colors-solarized'
+Plug 'dracula/vim'
 call plug#end()
 
-syntax enable
-set background=dark
-colorscheme solarized
+syntax on
+color dracula
