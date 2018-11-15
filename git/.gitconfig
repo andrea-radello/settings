@@ -1,0 +1,20 @@
+[core]
+        excludesfile = /Users/XXX/.gitignore_global
+[difftool "sourcetree"]
+        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+        trustExitCode = true
+[user]
+        name = XXX
+        email = XXX
+[commit]
+        template = /Users/XXX/.stCommitMsg
+[credential]
+        helper = osxkeychain
+[alias]
+        lg = log --all --decorate --oneline --graph
+        co = checkout
+        st = status
+        ci = commit
