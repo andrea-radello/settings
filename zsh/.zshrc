@@ -24,5 +24,5 @@
  alias cos="cd XPATH/XREPO/XFOLDER"
 
  # Node
- alias sbo="npm run XFOLDER:storybook:transpile-only"
+ alias sbo="npm run XFOLDER:storybook"
  alias sta="npm run XFOLDER:start:dev:transpile-only"
