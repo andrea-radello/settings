@@ -1,3 +1,5 @@
+ # Replace X... with custom values
+
 [core]
         excludesfile = /Users/XXX/.gitignore_global
 [difftool "sourcetree"]
