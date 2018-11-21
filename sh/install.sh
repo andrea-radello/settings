@@ -3,7 +3,6 @@
 brew update
 brew tap caskroom/cask
 
-# formulas
 brew install awscli
 brew install git
 brew install ipfs
@@ -12,10 +11,8 @@ brew install nvm
 brew install tmux
 brew install vault
 brew install zsh
-
 # brew install vim --with-override-system-vi
 
-# apps
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools
 brew cask install firefox
@@ -36,3 +33,7 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xscope
 brew cask install zoomus
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
