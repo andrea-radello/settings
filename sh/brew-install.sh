@@ -17,6 +17,7 @@ brew install zsh
 
 # apps
 brew cask install adobe-creative-cloud
+brew cask install android-platform-tools
 brew cask install firefox
 brew cask install fontbase
 brew cask install google-chrome
