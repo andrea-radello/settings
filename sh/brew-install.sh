@@ -30,6 +30,7 @@ brew cask install skype
 brew cask install slack
 brew cask install sourcetree
 brew cask install spectacle
+brew casl install vectr
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xscope
