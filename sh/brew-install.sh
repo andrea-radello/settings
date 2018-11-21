@@ -30,3 +30,6 @@ brew cask install skype
 brew cask install vlc
 brew cask install xscope
 brew cask install spectacle
+brew cask install adobe-creative-cloud
+brew cask install kdiff3
+brew cask install visual-studio-code
