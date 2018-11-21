@@ -20,3 +20,13 @@ brew cask install google-chrome
 brew cask install firefox
 brew cask install slack
 brew cask install zoomus
+brew cask install sourcetree
+brew cask install fontbase
+brew cask install iterm2
+brew cask install keepassx
+brew cask install obs
+brew cask install libreoffice
+brew cask install skype
+brew cask install vlc
+brew cask install xscope
+brew cask install spectacle
