@@ -2,6 +2,9 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew tap caskroom/cask
+brew tap caskroom/fonts
+
+brew cask install font-fira-code
 
 brew install awscli
 brew install git
@@ -38,4 +41,3 @@ brew cask install zoomus
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
