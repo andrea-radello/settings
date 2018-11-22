@@ -25,7 +25,6 @@ brew cask install fontbase
 brew cask install gimp
 brew cask install google-chrome
 brew cask install iterm2
-brew install caskformula/caskformula/inkscape
 brew cask install kdiff3
 brew cask install keepassx
 brew cask install libreoffice
@@ -40,6 +39,9 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xscope
 brew cask install zoomus
+
+brew cask install xquartz
+brew cask install inkscape
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
