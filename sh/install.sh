@@ -23,7 +23,7 @@ brew cask install fontbase
 brew cask install gimp
 brew cask install google-chrome
 brew cask install iterm2
-# brew install caskformula/caskformula/inkscape
+brew install caskformula/caskformula/inkscape
 brew cask install kdiff3
 brew cask install keepassx
 brew cask install libreoffice
