@@ -6,6 +6,7 @@ brew tap caskroom/fonts
 
 brew cask install font-fira-code
 brew cask install font-titillium-web
+brew cask install font-material-icons
 
 brew install awscli
 brew install git
