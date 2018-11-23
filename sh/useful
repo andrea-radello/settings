@@ -1,4 +1,4 @@
-# git comapre all changes from branch XXX against master
+# git compare changes from branch XXX against master
 git reset $(git merge-base master XXX)
 
 # ipfs copy topic
