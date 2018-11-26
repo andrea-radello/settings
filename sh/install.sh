@@ -45,3 +45,11 @@ brew cask install inkscape
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# set repeating keys (restart necessary)
+defaults write -g ApplePressAndHoldEnabled -bool false
+
+# restart after showing a confirmation dialog:
+osascript -e 'tell app "loginwindow" to «event aevtrrst»'
+
+
