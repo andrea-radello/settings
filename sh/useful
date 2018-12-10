@@ -1,3 +1,10 @@
+# vault ssh does not allow you to pass any options to ssh or do scp.
+# To allow SSH to share an established connection between sessions,
+# add the following lines to your $HOME/.ssh/config:
+Host *
+ControlMaster auto
+ControlPath /tmp/ssh_mux_%u_%C
+
 # git compare changes from branch XXX against master
 git reset $(git merge-base master XXX)
 
@@ -6,10 +13,3 @@ ada-cli copyPubSub -s XXX -d YYY
 
 # ipfs push topic continuously
 while true; do XXX | ipfs pubsub pub sXXX; sleep 5; done
-
-# vault ssh does not allow you to pass any options to ssh or do scp.
-# To allow SSH to share an established connection between sessions,
-# add the following lines to your $HOME/.ssh/config:
-Host *
-ControlMaster auto
-ControlPath /tmp/ssh_mux_%u_%C
