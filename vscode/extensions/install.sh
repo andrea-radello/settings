@@ -1,6 +1,7 @@
-# VS Code extension list
-# code --list-extensions | xargs -L 1 echo code --install-extension
+# VS Code extensions list
+code --list-extensions | xargs -L 1 echo code --install-extension
 
+# Install extensions
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
