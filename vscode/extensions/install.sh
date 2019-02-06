@@ -2,6 +2,7 @@
 code --list-extensions | xargs -L 1 echo code --install-extension
 
 # Install extensions
+code --install-extension cssho.vscode-svgviewer
 code --install-extension dracula-theme.theme-dracula
 code --install-extension eamodio.gitlens
 code --install-extension EditorConfig.EditorConfig
