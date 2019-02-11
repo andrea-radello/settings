@@ -11,6 +11,7 @@ brew cask install font-material-icons
 brew install awscli
 brew install git
 brew install ipfs
+brew install ipget
 brew install jq
 brew install nvm
 brew install tmux
