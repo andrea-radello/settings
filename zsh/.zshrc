@@ -13,7 +13,7 @@
  }
  export VAULT_ADDR=https://XSUBDOMAIN.XCOMPANY.XDOMAIN
 
- alias vaultlogin="vault auth -method=aws role=XDEVELOPER"
+ alias vaultlogin="vault login -method=aws role=XDEVELOPER"
 
  # IPFS
  alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
