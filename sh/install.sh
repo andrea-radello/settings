@@ -39,7 +39,7 @@ brew cask install visual-studio-code
 brew cask install vlc
 brew cask install xscope
 brew cask install zoomus
-brew cask install torbrowser
+brew cask install tor-browser
 
 brew cask install xquartz
 brew cask install inkscape
