@@ -17,3 +17,4 @@ code --install-extension nikitaKunevich.snippet-creator
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
+code --install-extension DavidAnson.vscode-markdownlint
