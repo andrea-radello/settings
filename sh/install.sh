@@ -10,6 +10,7 @@ brew cask install font-material-icons
 
 brew install awscli
 brew install git
+brew install diff-so-fancy
 brew install ipfs
 brew install jq
 brew install nvm
