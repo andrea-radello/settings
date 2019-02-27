@@ -1,25 +1,28 @@
  # Replace X... with custom values
 
 [core]
-        excludesfile = /Users/XXX/.gitignore_global
-[difftool "sourcetree"]
-        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-        path =
-[mergetool "sourcetree"]
-        cmd = /Applications/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-        trustExitCode = true
+        excludesfile = /Users/XXX/.gitignore_global   
+[diff]
+  tool = vscode
+[merge]
+  tool = vscode
+[difftool]
+  prompt = false
+[mergetool]
+  prompt = false
+[difftool "vscode"]
+  cmd = code --wait --diff $LOCAL $REMOTE
+  prompt = false
+[mergetool "vscode"]
+  cmd = code --wait $MERGED
+  prompt = false
 [user]
         name = XXX
-        email = XXX
+        email = XXX        
 [commit]
-        template = /Users/XXX/.stCommitMsg
+        template = /Users/XXX/.stCommitMsg   
 [credential]
         helper = osxkeychain
-[alias]
-        lg = log --all --decorate --oneline --graph
-        co = checkout
-        st = status
-        ci = commit     
 [color]
         ui = true
 [color "diff-highlight"]
@@ -34,4 +37,8 @@
         old = red bold
         new = green bold
         whitespace = red reverse
-
+[alias]
+        lg = log --all --decorate --oneline --graph
+        co = checkout
+        st = status
+        ci = commit  
