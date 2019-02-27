@@ -42,4 +42,18 @@
         lg = log --all --decorate --oneline --graph
         co = checkout
         st = status
-        ci = commit  
+        ci = commit
+
+# More advances aliases
+# `a`= add, `ci` = commit, `p` = push, `pr` = push & pull request
+# so `acipr` is "add, commit, push and pull-request"
+# it will also open the PR in the browser and copy the PR URL to the clipboard
+# and you can do `git pr "message"`
+#
+# [alias]      
+# aci = "!f() { git add -A && git commit -m \"$@\"; }; f"
+# cip = "!f() { git commit -m \"$@\" && git push; }; f"
+# acip = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+# cipr = "!f() { git cip \"$@\" && git pr \"$@\"; }; f"
+# acipr = "!f() { git acip \"$@\" && git pr \"$@\"; }; f"
+# pr = "!f() { url=$(hub pull-request -m \"$@\") && echo $url|pbcopy&& open $url; }; f"
