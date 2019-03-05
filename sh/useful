@@ -13,3 +13,7 @@ ada-cli copyPubSub -s XXX -d YYY
 
 # ipfs push topic continuously
 while true; do XXX | ipfs pubsub pub sXXX; sleep 5; done
+
+# to update script in `build-util`
+git submodule update
+
