@@ -25,6 +25,11 @@ set timeoutlen=1000 ttimeoutlen=0
 " Access the system clipboard
 set clipboard=unnamed
 
+" iTerm2/mac change cursor shape in different modes
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_SR = "\<Esc>]50;CursorShape=2\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+
 " Set line numbers
 " set number
 
@@ -40,8 +45,3 @@ set clipboard=unnamed
 " Map nerdtree to shortcut
 " map <C-n> :NERDTreeToggle<CR>
 " <leader>ne :NERDTreeToggle<cr>
-
-" iTerm2/mac change cursor shape in different modes
-" let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-" let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-" let &t_EI = "\<Esc>]50;CursorShape=0\x7"
