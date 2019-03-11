@@ -31,7 +31,7 @@ let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 
 " Set line numbers
-" set number
+set number
 
 " Map escape using jj
 " :imap jj <Esc>
