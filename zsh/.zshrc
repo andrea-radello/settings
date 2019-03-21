@@ -1,5 +1,8 @@
  # Apped this settings to .zshrc, and replace X... with custom values
  
+ # HUB
+ alias git=hub
+ 
  # Vault
  function vaultauth {
  vault auth "$@" && \
