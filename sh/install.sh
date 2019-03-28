@@ -29,6 +29,7 @@ brew cask install google-chrome
 brew cask install iterm2
 brew cask install kdiff3
 brew cask install keepassx
+brew cask install alfred
 brew cask install libreoffice
 brew cask install obs
 brew cask install skype
