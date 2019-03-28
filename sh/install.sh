@@ -23,6 +23,7 @@ brew install vim --with-override-system-vi
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools
 brew cask install firefox
+brew cask install opera
 brew cask install fontbase
 brew cask install gimp
 brew cask install google-chrome
