@@ -1,4 +1,5 @@
 # Replace XXX with your paths
+# Run it as `sh .tmux-ax.sh`
 
 # Set environment variables
 COSMOS=~/XXX
