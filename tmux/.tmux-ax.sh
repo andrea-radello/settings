@@ -1,12 +1,13 @@
-# Replace XXX with paths
+# Replace XXX with project paths
 # Set variables
 COSMOS=~/XXX
 DEPLOYMENT_CONFIG=~/XXX
 
-if tmux ls | grep attached -q ; then
-    echo cannot re create tmux session
-    exit 1
-else
+tmuxstart() {
+    tmux ls | grep "ax" && {
+        tmux a -t ax;
+        return 0;
+    }
     # Create new session with first window named `ui`
     tmux new-session -A -s ax -n ui -d
     tmux split-window -h -t ax:ui.1
@@ -21,5 +22,7 @@ else
     # Select initial window and panel
     tmux select-window -t ax:ui.1
     tmux select-pane -t ax:ui.1
-    tmux attach -t ax
-fi
+    tmux a -t ax
+}
+
+tmuxstart
