@@ -35,6 +35,7 @@ brew cask install libreoffice
 brew cask install obs
 brew cask install skype
 brew cask install slack
+brew cask install notion
 brew cask install soundflower
 brew cask install sourcetree
 brew cask install spectacle
