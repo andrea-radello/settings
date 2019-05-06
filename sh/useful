@@ -17,6 +17,6 @@ while true; do XXX | ipfs pubsub pub sXXX; sleep 5; done
 # to update script in `build-util`
 git submodule update
 
-# simulate a commit (even if empty) useful in case a force restart build is necessary in Azure DevOps
+# create a fake commit and trigger the new build (in Azure DevOps)
 git commit -a --amend --no-edit --no-verify; git push --force-with-lease
 
