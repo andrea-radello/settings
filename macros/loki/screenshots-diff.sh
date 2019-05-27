@@ -2,7 +2,7 @@
 
 # Replace X... with custom values
 
-# Open reference, current and difference images (macos specific)
+# Open reference screenshot created using Loky, current and difference images (macos specific)
 
 if [ $# -ne 1 ]; then
   echo "usage: $0 <image name>"
