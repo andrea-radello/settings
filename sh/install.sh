@@ -20,6 +20,7 @@ brew install vault
 brew install zsh
 brew install vim --with-override-system-vi
 
+brew cask install docker
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools
 brew cask install firefox
