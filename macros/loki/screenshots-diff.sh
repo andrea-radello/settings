@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Replace X... with custom values
+
 # Open reference, current and difference images (macos specific)
 
 if [ $# -ne 1 ]; then
@@ -7,7 +9,7 @@ if [ $# -ne 1 ]; then
   exit -1
 fi
 
-REPO=/XXX
+REPO=/XPATH/XREPO/XFOLDER
 
 open $REPO/.loki/reference/$1.png
 open $REPO/.loki/current/$1.png
