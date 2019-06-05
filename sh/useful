@@ -19,6 +19,3 @@ git submodule update
 
 # create a fake commit and trigger the new build (in Azure DevOps)
 git commit -a --amend --no-edit --no-verify; git push --force-with-lease
-
-# revert last commit
-git revert HEAD -m 1
