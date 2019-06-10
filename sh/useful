@@ -19,3 +19,8 @@ git submodule update
 
 # create a fake commit and trigger the new build (in Azure DevOps)
 git commit -a --amend --no-edit --no-verify; git push --force-with-lease
+
+# rename git branch locally and remotely
+git branch -m old_branch new_branch         # Rename branch locally    
+git push origin :old_branch                 # Delete the old branch    
+git push --set-upstream origin new_branch   # Push the new branch, set local branch to track the new remote
