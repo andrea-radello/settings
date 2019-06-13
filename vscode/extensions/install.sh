@@ -14,7 +14,6 @@ code --install-extension ms-vsliveshare.vsliveshare
 code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension naumovs.color-highlight
-code --install-extension nikitaKunevich.snippet-creator
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
