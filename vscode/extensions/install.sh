@@ -17,3 +17,4 @@ code --install-extension naumovs.color-highlight
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
+code --install-extension dbaeumer.vscode-eslint
