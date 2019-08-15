@@ -29,3 +29,6 @@ git push --set-upstream origin new_branch   # Push the new branch, set local bra
 git apply << EOF
 ... some diff here
 EOF
+
+## grep from npm run
+npm run XYZ &> tempfile && grep JYZ tempfile
