@@ -32,3 +32,6 @@ EOF
 
 ## grep from npm run
 npm run XYZ &> tempfile && grep JYZ tempfile
+
+## Netcatlisten to a specific port (in ex 3000)
+nc -l 3000
