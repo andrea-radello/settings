@@ -15,6 +15,7 @@ brew install diff-so-fancy
 brew install ipfs
 brew install jq
 brew install nvm
+brew install yarn
 brew install tmux
 brew install vault
 brew install zsh
