@@ -37,5 +37,4 @@ npm run XYZ &> tempfile && grep JYZ tempfile
 nc -l 3000
 
 ## Attaches a pull request for the current branch to the existing issue number x.
-git hub pull-request -i x
-git hub pull attach x
+hub pull-request -i x
