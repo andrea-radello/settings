@@ -1,31 +1,34 @@
- # Apped this settings to .zshrc, and replace X... with custom values
- 
- # HUB
- alias git=hub
- 
- # Vault
- function vaultauth {
- vault auth "$@" && \
-  if [ -f ~/.vault-token ]; then
-    token=$(cat ~/.vault-token)
-    if [ ! -z $token ]; then
-      export VAULT_TOKEN=$token
-    fi
-    rm ~/.vault-token
-  fi
- }
- export VAULT_ADDR=https://XSUBDOMAIN.XCOMPANY.XDOMAIN
+# Apped this settings to .zshrc, and replace X... with custom values
 
- alias vaultlogin="vault login -method=aws role=XDEVELOPER"
+# HUB
+alias git=hub
 
- # IPFS
- alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
- alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"'"
- alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
+# Vault
+function vaultauth {
+vault auth "$@" && \
+ if [ -f ~/.vault-token ]; then
+   token=$(cat ~/.vault-token)
+   if [ ! -z $token ]; then
+     export VAULT_TOKEN=$token
+   fi
+   rm ~/.vault-token
+ fi
+}
+export VAULT_ADDR=https://XSUBDOMAIN.XCOMPANY.XDOMAIN
 
- # Folders
- alias cos="cd XPATH/XREPO/XFOLDER"
+alias vaultlogin="vault login -method=aws role=XDEVELOPER"
 
- # Node
- alias sbo="npm run XFOLDER:storybook"
- alias sta="npm run XFOLDER:start:dev:transpile-only"
+# IPFS
+alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
+alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"'"
+alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
+
+# Folders
+alias cos="cd XPATH/XREPO/XFOLDER"
+
+# Node
+alias sbo="npm run XFOLDER:storybook"
+alias sta="npm run XFOLDER:start:dev:transpile-only"
+
+# Applications
+alias chrome="open -a '"Google Chrome"'"
