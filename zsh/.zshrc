@@ -31,4 +31,4 @@ alias sbo="npm run XFOLDER:storybook"
 alias sta="npm run XFOLDER:start:dev:transpile-only"
 
 # Applications
-alias chrome="open -a '"Google Chrome"'"
+alias chrome="open -a \"Google Chrome\""
