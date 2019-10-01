@@ -1,5 +1,8 @@
 # Apped this settings to .zshrc, and replace X... with custom values
 
+# VI Editing mode
+set -o vi
+
 # HUB
 alias git=hub
 
