@@ -21,6 +21,9 @@ export VAULT_ADDR=https://XSUBDOMAIN.XCOMPANY.XDOMAIN
 
 alias vaultlogin="vault login -method=aws role=XDEVELOPER"
 
+# Rust and cargo
+export PATH=$HOME/.cargo/.bin:$PATH
+
 # IPFS
 alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
 alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"'"
