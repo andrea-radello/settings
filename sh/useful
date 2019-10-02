@@ -38,3 +38,6 @@ nc -l 3000
 
 ## Attaches a pull request for the current branch to the existing issue number x.
 hub pull-request -i x
+
+## Grep and show 2 lines before and after the result
+grep -C2
