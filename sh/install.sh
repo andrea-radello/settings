@@ -51,6 +51,8 @@ brew cask install tor-browser
 brew cask install xquartz
 brew cask install inkscape
 
+brew cask camtwist
+
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
