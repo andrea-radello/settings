@@ -22,6 +22,7 @@ brew install vault
 brew install zsh
 brew install vim --with-override-system-vi
 
+brew install docker
 brew cask install docker
 brew install docker-compose
 brew cask install adobe-creative-cloud
