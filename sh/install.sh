@@ -21,6 +21,7 @@ brew install tmux
 brew install vault
 brew install zsh
 brew install vim --with-override-system-vi
+brew install postgres
 
 brew install docker
 brew cask install docker
