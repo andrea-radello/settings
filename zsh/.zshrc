@@ -36,7 +36,6 @@ alias sta="npm run XFOLDER:start:dev:transpile-only"
 # Applications
 alias chrome="open -a \"Google Chrome\""
 
-
 # VI editing mode
 bindkey -v
 
