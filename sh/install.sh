@@ -21,11 +21,15 @@ brew install tmux
 brew install vault
 brew install zsh
 brew install vim --with-override-system-vi
-brew install postgres
 
 brew install docker
 brew cask install docker
 brew install docker-compose
+
+brew install postgres
+brew cask install adoptopenjdk
+brew cask install dbeaver-community
+
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools
 brew cask install firefox
