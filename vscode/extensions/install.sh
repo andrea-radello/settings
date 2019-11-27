@@ -24,3 +24,4 @@ code --install-extension scala-lang.scala
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
+code --install-extension ckolkman.vscode-postgres
