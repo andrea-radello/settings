@@ -1,8 +1,5 @@
 # Apped this settings to .zshrc, and replace X... with custom values
 
-# VI Editing mode
-set -o vi
-
 # HUB
 alias git=hub
 
@@ -38,3 +35,37 @@ alias sta="npm run XFOLDER:start:dev:transpile-only"
 
 # Applications
 alias chrome="open -a \"Google Chrome\""
+
+
+# VI editing mode
+bindkey -v
+
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+function zle-keymap-select zle-line-init
+{
+    # change cursor shape in iTerm2
+    case $KEYMAP in
+        vicmd)      print -n -- "\E]50;CursorShape=0\C-G";;  # block cursor
+        viins|main) print -n -- "\E]50;CursorShape=1\C-G";;  # line cursor
+    esac
+
+    zle reset-prompt
+    zle -R
+}
+
+function zle-line-finish
+{
+    print -n -- "\E]50;CursorShape=0\C-G"  # block cursor
+}
+
+zle -N zle-line-init
+zle -N zle-line-finish
+zle -N zle-keymap-select
+
+export KEYTIMEOUT=1
