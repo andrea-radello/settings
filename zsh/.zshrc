@@ -28,13 +28,15 @@ alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
 
 # AX Paths
 AX_LOCATION_COSMOS="XPATH/XREPO/XFOLDER"
+AX_LOCATION_COSMOS_POND="XPATH/XREPO/XFOLDER/POND"
 
 # Folders
 alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
+alias pond="cd ~ && cd ${AX_LOCATION_COSMOS_POND}"
 
 # Node
-alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS} && npm run XFOLDER:storybook"
-alias sta="cd ~ && cd ${AX_LOCATION_COSMOS} && npm run XFOLDER:start:dev:transpile-only"
+alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:storybook"
+alias sta="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:start:dev:transpile-only"
 
 # Applications
 alias chrome="open -a \"Google Chrome\""
