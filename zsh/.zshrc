@@ -26,12 +26,15 @@ alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
 alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"'"
 alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
 
+# AX Paths
+AX_LOCATION_COSMOS="XPATH/XREPO/XFOLDER"
+
 # Folders
-alias cos="cd XPATH/XREPO/XFOLDER"
+alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
 
 # Node
-alias sbo="npm run XFOLDER:storybook"
-alias sta="npm run XFOLDER:start:dev:transpile-only"
+alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS} && npm run XFOLDER:storybook"
+alias sta="cd ~ && cd ${AX_LOCATION_COSMOS} && npm run XFOLDER:start:dev:transpile-only"
 
 # Applications
 alias chrome="open -a \"Google Chrome\""
