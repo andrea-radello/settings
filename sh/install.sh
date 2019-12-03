@@ -12,6 +12,7 @@ brew cask install font-material-icons
 brew install awscli
 brew install git
 brew install hub
+brew install tig
 brew install diff-so-fancy
 brew install ipfs
 brew install jq
