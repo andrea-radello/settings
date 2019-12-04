@@ -37,11 +37,11 @@
         old = red bold
         new = green bold
         whitespace = red reverse
-[alias]
-        lg = log --all --decorate --oneline --graph
-        co = checkout
-        st = status
-        ci = commit
+#[alias]
+#        lg = log --all --decorate --oneline --graph
+#        co = checkout
+#        st = status
+#        ci = commit
 
 # More advances aliases
 # `a`= add, `ci` = commit, `p` = push, `pr` = push & pull request
