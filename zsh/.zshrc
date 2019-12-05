@@ -1,5 +1,9 @@
 # Apped this settings to .zshrc, and replace X... with custom values
 
+# NVM (use instructions from https://github.com/nvm-sh/nvm#installation-and-update)
+# export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"# 
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # HUB
 alias git=hub
 
