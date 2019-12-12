@@ -32,11 +32,17 @@ alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
 
 # AX Paths
 AX_LOCATION_COSMOS="XPATH/XREPO/XFOLDER"
-AX_LOCATION_COSMOS_POND="XPATH/XREPO/XFOLDER/POND"
+AX_LOCATION_COSMOS_POND="XPATH/XREPO/XFOLDER/pond"
+AX_LOCATION_COSMOS_BIN="XPATH/XREPO/XFOLDER/bin"
+AX_LOCATION_COSMOS_RT="XPATH/XREPO/XFOLDER/rt-master"
+AX_LOCATION_DEPLOYMENT="XPATH/XREPO//Internal-Deployment-Config"
 
 # Folders
 alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
 alias pond="cd ~ && cd ${AX_LOCATION_COSMOS_POND}"
+alias bin="cd ~ && cd ${AX_LOCATION_COSMOS_BIN}"
+alias rt="cd ~ && cd ${AX_LOCATION_COSMOS_RT}"
+alias dcon="cd ~ && cd ${AX_LOCATION_DEPLOYMENT}"
 
 # Node
 alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:storybook"
