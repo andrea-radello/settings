@@ -42,7 +42,7 @@ alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
 alias pond="cd ~ && cd ${AX_LOCATION_COSMOS_POND}"
 alias bin="cd ~ && cd ${AX_LOCATION_COSMOS_BIN}"
 alias rt="cd ~ && cd ${AX_LOCATION_COSMOS_RT}"
-alias dcon="cd ~ && cd ${AX_LOCATION_DEPLOYMENT}"
+alias dconfig="cd ~ && cd ${AX_LOCATION_DEPLOYMENT}"
 
 # Node
 alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:storybook"
