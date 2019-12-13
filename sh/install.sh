@@ -16,6 +16,7 @@ brew install tig
 brew install diff-so-fancy
 brew install ipfs
 brew install jq
+brew install cbor2json
 brew install nvm
 brew install yarn
 brew install tmux
