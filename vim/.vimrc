@@ -13,6 +13,7 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim'
+Plug 'vitalk/vim-simple-todo'
 call plug#end()
 
 " Set dracula as theme
