@@ -6,6 +6,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
 endif
 
 " Load plugins
+" Install plugins using `vim +PlugInstall +qall`
 call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'
