@@ -51,6 +51,7 @@ alias sta="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:start:dev:tr
 
 # Applications
 alias chrome="open -a \"Google Chrome\""
+alias ax="cd ~ && sh ax.sh"
 
 # VI editing mode
 bindkey -v
