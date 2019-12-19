@@ -1,28 +1,49 @@
-# Replace XXX with project paths
-# Set variables
-COSMOS=~/XXX
-DEPLOYMENT_CONFIG=~/XXX
+!/bin/bash
+# Setup .zshrc first!
 
-tmuxstart() {
-    tmux ls | grep "ax" && {
-        tmux a -t ax;
-        return 0;
-    }
-    # Create new session with first window named `ui`
-    tmux new-session -A -s ax -n ui -d
-    tmux split-window -h -t ax:ui.1
-    tmux send-keys -t ax:ui.1 "cd $COSMOS/pond && nvm use" C-m
-    tmux send-keys -t ax:ui.2 "cd $COSMOS/pond && nvm use" C-m
-    tmux send-keys -t ax:ui.1 "clear" C-m
-    tmux send-keys -t ax:ui.2 "clear" C-m
-    # Create `devops` window
-    tmux new-window -n devops -t ax
-    tmux send-keys -t ax:devops.1 "cd $DEPLOYMENT_CONFIG" C-m
-    tmux send-keys -t ax:devops.1 "clear" C-m
-    # Select initial window and panel
-    tmux select-window -t ax:ui.1
-    tmux select-pane -t ax:ui.1
-    tmux a -t ax
-}
+# If this file is modified, kill the existing session
+# with "tmux kill-session -t mytmux" and run this again
+ 
+# If the "mytmux" session does not exist ...
+if ! tmux has-session -t mytmux; then
+  # Create a new session named "mytmux" and detach from it
+  # The name of the first window will be the command running in it (vim)
+  tmux new-session -s mytmux -d
 
-tmuxstart
+  # Create two windows and add names
+  tmux new-window -n mwl -t mytmux
+  tmux new-window -n oth -t mytmux
+
+  # Split into pane the two windows
+  tmux split-window -h -t mytmux:1
+  tmux split-window -v -t mytmux:1.1
+  tmux split-window -v -t mytmux:1.2
+  tmux split-window -h -t mytmux:2
+
+  # Send command to pane on right most pane 
+  tmux send-keys -t mytmux:0.0 'cd' C-m
+  
+  # Send commands to MWL specific panes 
+  tmux send-keys -t mytmux:1.1 'cd $AX_LOCATION_COSMOS_BIN' C-m
+  tmux send-keys -t mytmux:1.1 'clear' C-m
+ 
+  tmux send-keys -t mytmux:1.2 'cd $AX_LOCATION_COSMOS_RT' C-m
+  tmux send-keys -t mytmux:1.2 'clear' C-m
+  
+  tmux send-keys -t mytmux:1.3 'cd $AX_LOCATION_COSMOS_POND' C-m
+  tmux send-keys -t mytmux:1.3 'clear' C-m
+ 
+  # Send commands to other panes 
+  tmux send-keys -t mytmux:2.1 'cd $AX_LOCATION_SPO' C-m
+  tmux send-keys -t mytmux:2.1 'clear' C-m
+
+  tmux send-keys -t mytmux:2.2 'cd $AX_LOCATION_DEPLOYMENT' C-m
+  tmux send-keys -t mytmux:2.2 'clear' C-m
+ 
+  # Focus MWL window right most pane
+  tmux select-window -t mytmux:1
+  tmux select-pane -t mytmux:1.4
+fi
+ 
+# Attach to the "mytmux" session
+tmux attach -t mytmux
