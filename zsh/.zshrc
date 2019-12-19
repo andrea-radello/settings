@@ -31,12 +31,12 @@ alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"
 alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
 
 # AX Paths
-AX_LOCATION_COSMOS="XPATH/XREPO/XFOLDER"
-AX_LOCATION_COSMOS_POND="XPATH/XREPO/XFOLDER/pond"
-AX_LOCATION_COSMOS_BIN="XPATH/XREPO/XFOLDER/bin"
-AX_LOCATION_COSMOS_RT="XPATH/XREPO/XFOLDER/rt-master"
-AX_LOCATION_DEPLOYMENT="XPATH/XREPO/Internal-Deployment-Config"
-AX_LOCATION_SPO="XPATH/xpo"
+export AX_LOCATION_COSMOS="XPATH/XREPO/XFOLDER"
+export AX_LOCATION_COSMOS_POND="XPATH/XREPO/XFOLDER/pond"
+export AX_LOCATION_COSMOS_BIN="XPATH/XREPO/XFOLDER/bin"
+export AX_LOCATION_COSMOS_RT="XPATH/XREPO/XFOLDER/rt-master"
+export AX_LOCATION_DEPLOYMENT="XPATH/XREPO/Internal-Deployment-Config"
+export AX_LOCATION_SPO="XPATH/xpo"
 
 # Folders
 alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
