@@ -1,20 +1,17 @@
 !/bin/bash
-# Setup .zshrc first!
-
 # If this file is modified, kill the existing session
 # with "tmux kill-session -t mytmux" and run this again
  
 # If the "mytmux" session does not exist ...
 if ! tmux has-session -t mytmux; then
   # Create a new session named "mytmux" and detach from it
-  # The name of the first window will be the command running in it (vim)
-  tmux new-session -s mytmux -d
+  tmux new-session -d -s mytmux -n mwl
 
-  # Create two windows and add names
-  tmux new-window -n mwl -t mytmux
+  # Create additionally two windows
   tmux new-window -n oth -t mytmux
+  tmux new-window -n zsh -t mytmux
 
-  # Split into pane the two windows
+  # Split into panes the two windows
   tmux split-window -h -t mytmux:1
   tmux split-window -v -t mytmux:1.1
   tmux split-window -v -t mytmux:1.2
