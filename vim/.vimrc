@@ -18,6 +18,7 @@ Plug 'vitalk/vim-simple-todo'
 call plug#end()
 
 " Set dracula as theme
+let g:dracula_colorterm = 0 "avoid color issues with missing truecolor support?
 syntax on
 color dracula
 
