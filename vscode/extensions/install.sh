@@ -26,3 +26,4 @@ code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
 code --install-extension vscodevim.vim
 code --install-extension ckolkman.vscode-postgres
+code --install-extension timonwong.shellcheck
