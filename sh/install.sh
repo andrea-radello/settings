@@ -24,6 +24,7 @@ brew install vault
 brew install zsh
 brew install vim --with-override-system-vi
 brew install ranger
+brew install shellcheck
 
 brew install docker
 brew cask install docker
