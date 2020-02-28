@@ -2,8 +2,13 @@
 code --list-extensions | xargs -L 1 echo code --install-extension
 
 # Install extensions
+code --install-extension Actyx.actyx-pond
+code --install-extension alefragnani.Bookmarks
+code --install-extension asvetliakov.vscode-neovim
+code --install-extension bierner.emojisense
 code --install-extension bradymholt.pgformatter
 code --install-extension bungcip.better-toml
+code --install-extension ckolkman.vscode-postgres
 code --install-extension cssho.vscode-svgviewer
 code --install-extension DavidAnson.vscode-markdownlint
 code --install-extension dbaeumer.vscode-eslint
@@ -24,6 +29,5 @@ code --install-extension rust-lang.rust
 code --install-extension scala-lang.scala
 code --install-extension streetsidesoftware.code-spell-checker
 code --install-extension streetsidesoftware.code-spell-checker-german
-code --install-extension vscodevim.vim
-code --install-extension ckolkman.vscode-postgres
 code --install-extension timonwong.shellcheck
+code --install-extension vscodevim.vim
