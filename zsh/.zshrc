@@ -37,6 +37,7 @@ export AX_LOCATION_COSMOS_BIN="XPATH/XREPO/XFOLDER/bin"
 export AX_LOCATION_COSMOS_RT="XPATH/XREPO/XFOLDER/rt-master"
 export AX_LOCATION_DEPLOYMENT="XPATH/XREPO/Internal-Deployment-Config"
 export AX_LOCATION_SPO="XPATH/xpo"
+export DESKTOP="/XPATH/Desktop/"
 
 # Folders
 alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
@@ -52,6 +53,10 @@ alias sta="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:start:dev:tr
 # Applications
 alias ax="cd ~ && sh ax.sh"
 # alias chrome="open -a \"Google Chrome\"" # use instead Oh My Zsh plugin
+
+# Notes
+alias notes="cd ${DESKTOP} && nvim ax-notes.txt"
+# alias notes="cd ${DESKTOP} && vim ax-notes.txt" # for vim
 
 # # VI editing mode
 # bindkey -v
