@@ -1,7 +1,7 @@
 # VS Code extensions list
 code --list-extensions | xargs -L 1 echo code --install-extension
 
-# Install extensions
+# Install extensions (manually disable what is not needed)
 code --install-extension Actyx.actyx-pond
 code --install-extension alefragnani.Bookmarks
 code --install-extension asvetliakov.vscode-neovim
