@@ -60,8 +60,7 @@ alias ax="cd ~ && sh ax.sh"
 # alias chrome="open -a \"Google Chrome\"" # use instead Oh My Zsh plugin
 
 # Notes
-alias notes="cd ${DESKTOP} && nvim ax-notes.txt"
-# alias notes="cd ${DESKTOP} && vim ax-notes.txt" # for vim
+alias notes="cd ${DESKTOP} && vim ax-notes.txt" # for vim
 
 # # VI editing mode
 # bindkey -v
