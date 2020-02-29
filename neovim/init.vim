@@ -1,4 +1,4 @@
-" Avoid conglict with vscide extension asvetliakov.vscode-neovim
+" Disable nvim settings in vscode
 if !exists('g:vscode')
 
   " Load plugins
@@ -18,7 +18,10 @@ if !exists('g:vscode')
   " Set line numbers
   set number
   
-  " Do not copy line numbers and gutter on yank
+  " Set clipborad register
   set clipboard=unnamedplus
+
+  " Set mouse
+  set mouse=a
 
 endif
