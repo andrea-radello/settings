@@ -22,6 +22,11 @@ export VAULT_ADDR=https://XSUBDOMAIN.XCOMPANY.XDOMAIN
 
 alias vaultlogin="vault login -method=aws role=XDEVELOPER"
 
+# Neovim
+export PATH="/usr/local/bin/nvim:$PATH"
+alias vim=nvim
+alias vi=nvim
+
 # Rust and cargo
 export PATH=$HOME/.cargo/.bin:$PATH
 
