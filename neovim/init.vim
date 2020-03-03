@@ -8,6 +8,7 @@ if !exists('g:vscode')
   Plug 'vim-airline/vim-airline'
   Plug 'dracula/vim'
   Plug 'vitalk/vim-simple-todo'
+  Plug 'tpope/vim-commentary'
   call plug#end()
   
   " Set dracula as theme
