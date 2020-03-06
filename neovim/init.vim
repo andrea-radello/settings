@@ -1,6 +1,6 @@
 " Neo Vim and vscode extensions `asvetliakov.vscode-neovim` settings
 
-" Load plugins vim-plug
+" Load plugins using `vim-plug`
 call plug#begin()
   Plug 'scrooloose/nerdtree'
   Plug 'tpope/vim-surround'
