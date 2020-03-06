@@ -1,4 +1,4 @@
-" Neo Vim and vscode extensions `asvetliakov.vscode-neovim` settings
+" Settings for Neo Vim and vscode extension `asvetliakov.vscode-neovim` 
 
 " Load plugins using `vim-plug`
 call plug#begin()
@@ -7,13 +7,13 @@ call plug#begin()
   Plug 'vim-airline/vim-airline'
   Plug 'dracula/vim'
   Plug 'vitalk/vim-simple-todo'
-  " Use plugin outside vscode only, vscode native feature is better
+  " Do not use this plugin in vscode (read below)
   if !exists('g:vscode')
     Plug 'tpope/vim-commentary'
   endif
 call plug#end()
 
-" Enable settings outside vscode
+" Enable settings in terminal
 if !exists('g:vscode')
   " Set dracula as theme
   let g:dracula_colorterm = 0
@@ -36,7 +36,7 @@ if !exists('g:vscode')
 endif
 
 " Emulate `vim-commentary` keyboard shortcuts by mapping them with vscode
-" comment feature, do this in order to comment more easily .tsx files
+" comment native feature, do this in order to comment more easily .tsx files
 if exists('g:vscode')
   xmap gc  <Plug>VSCodeCommentary
   nmap gc  <Plug>VSCodeCommentary
