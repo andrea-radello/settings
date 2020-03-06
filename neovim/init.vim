@@ -7,7 +7,7 @@ call plug#begin()
   Plug 'vim-airline/vim-airline'
   Plug 'dracula/vim'
   Plug 'vitalk/vim-simple-todo'
-  " Use plugin outside vscode
+  " Use plugin outside vscode only, vscode native feature is better
   if !exists('g:vscode')
     Plug 'tpope/vim-commentary'
   endif
