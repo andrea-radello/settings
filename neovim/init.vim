@@ -13,7 +13,7 @@ call plug#begin()
   endif
 call plug#end()
 
-" Enable setting outside vscode
+" Enable settings outside vscode
 if !exists('g:vscode')
   " Set dracula as theme
   let g:dracula_colorterm = 0
