@@ -1,19 +1,20 @@
+" Neo Vim and vscode extensions `asvetliakov.vscode-neovim` settings
+
 " Load plugins
 call plug#begin()
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-surround'
-Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim'
-Plug 'vitalk/vim-simple-todo'
-" Use plugin outside vscode
-if !exists('g:vscode')
-  Plug 'tpope/vim-commentary'
-endif
+  Plug 'scrooloose/nerdtree'
+  Plug 'tpope/vim-surround'
+  Plug 'vim-airline/vim-airline'
+  Plug 'dracula/vim'
+  Plug 'vitalk/vim-simple-todo'
+  " Use plugin outside vscode
+  if !exists('g:vscode')
+    Plug 'tpope/vim-commentary'
+  endif
 call plug#end()
 
 " Enable setting outside vscode
 if !exists('g:vscode')
-
   " Set dracula as theme
   let g:dracula_colorterm = 0
   syntax on
@@ -28,9 +29,13 @@ if !exists('g:vscode')
   " Set mouse
   set mouse=a
 
+  " Use spaces for all indentation
+  set expandtab
+  set shiftwidth=2
+  set softtabstop=2
 endif
 
-" Emulate vim-commentary keyboard shortcuts by mapping them with vscode
+" Emulate `vim-commentary` keyboard shortcuts by mapping them with vscode
 " comment feature, do this in order to comment more easily .tsx files
 if exists('g:vscode')
   xmap gc  <Plug>VSCodeCommentary
@@ -38,8 +43,3 @@ if exists('g:vscode')
   omap gc  <Plug>VSCodeCommentary
   nmap gcc <Plug>VSCodeCommentaryLine
 endif
-
-" Use spaces for all indentation
-set expandtab
-set shiftwidth=2
-set softtabstop=2
