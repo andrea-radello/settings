@@ -38,3 +38,8 @@ if exists('g:vscode')
   omap gc  <Plug>VSCodeCommentary
   nmap gcc <Plug>VSCodeCommentaryLine
 endif
+
+" Use spaces for all indentation
+set expandtab
+set shiftwidth=2
+set softtabstop=2
