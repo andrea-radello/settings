@@ -5,7 +5,8 @@ call plug#begin()
   Plug 'scrooloose/nerdtree'
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
-  Plug 'dracula/vim'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'altercation/vim-colors-solarized'
   Plug 'vitalk/vim-simple-todo'
   " Do not use this plugin in vscode (read below)
   if !exists('g:vscode')
@@ -30,7 +31,7 @@ if !exists('g:vscode')
   set softtabstop=2
 endif
 
-" Emulate `vim-commentary` keyboard shortcuts by mapping them with vscode
+" Emulat `vim-commentary` keyboard shortcuts by mapping them with vscode
 " comment native feature, do this in order to comment more easily .tsx files
 if exists('g:vscode')
   xmap gc  <Plug>VSCodeCommentary
@@ -38,3 +39,6 @@ if exists('g:vscode')
   omap gc  <Plug>VSCodeCommentary
   nmap gcc <Plug>VSCodeCommentaryLine
 endif
+
+" Enable vim airline solarized
+let g:airline_theme='solarized'
