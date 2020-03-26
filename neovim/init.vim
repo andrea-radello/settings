@@ -31,7 +31,7 @@ if !exists('g:vscode')
   set softtabstop=2
 endif
 
-" Emulat `vim-commentary` keyboard shortcuts by mapping them with vscode
+" Emula `vim-commentary` keyboard shortcuts by mapping them with vscode
 " comment native feature, do this in order to comment more easily .tsx files
 if exists('g:vscode')
   xmap gc  <Plug>VSCodeCommentary
