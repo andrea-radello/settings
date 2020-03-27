@@ -1,4 +1,5 @@
 " Settings for Neo Vim and vscode extension `asvetliakov.vscode-neovim` 
+" iTerm2 theme: https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/AtomOneLight.itermcolors
 
 " Load plugins using `vim-plug`
 call plug#begin()
@@ -6,7 +7,6 @@ call plug#begin()
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'altercation/vim-colors-solarized'
   Plug 'vitalk/vim-simple-todo'
   " Do not use this plugin in vscode (read below)
   if !exists('g:vscode')
@@ -41,4 +41,4 @@ if exists('g:vscode')
 endif
 
 " Enable vim airline solarized
-let g:airline_theme='solarized'
+let g:airline_theme='sol'
