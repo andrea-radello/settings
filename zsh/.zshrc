@@ -56,7 +56,7 @@ alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:storybook"
 alias sta="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run XFOLDER:start:dev:transpile-only"
 
 # Applications
-alias ax="cd ~ && sh ax.sh"
+alias ax-spo="cd ~ && sh ax-spo.sh"
 # alias chrome="open -a \"Google Chrome\"" # use instead Oh My Zsh plugin
 
 # Notes
