@@ -29,6 +29,7 @@ brew install neovim
 brew install ranger
 brew install shellcheck
 brew install https://raw.githubusercontent.com/kadwanev/bigboybrew/master/Library/Formula/sshpass.rb
+brew install protobuf
 
 brew install docker
 brew cask install docker
