@@ -1,4 +1,4 @@
-# load ax settings
+# Load ax settings
 source ~/.zshrc_config_ax
 
 # ls in color
