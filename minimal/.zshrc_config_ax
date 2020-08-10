@@ -1,0 +1,50 @@
+# Replace `XXX`
+
+# Vault
+function vaultauth {
+vault auth "$@" && \
+ if [ -f ~/.vault-token ]; then
+   token=$(cat ~/.vault-token)
+   if [ ! -z $token ]; then
+     export VAULT_TOKEN=$token
+   fi
+   rm ~/.vault-token
+ fi
+}
+export VAULT_ADDR=https://vault.XXX.net
+
+alias vaultlogin="vault login -method=aws role=XXX-XXX"
+
+# Rust and cargo
+export PATH=$HOME/.cargo/.bin:$PATH
+
+# IPFS
+alias ipfsopen="ipfs config --json Addresses.Gateway '"/ip4/0.0.0.0/tcp/8080"'"
+alias ipfsclose="ipfs config --json Addresses.Gateway '"/ip4/127.0.0.1/tcp/8080"'"
+alias ipfsstart="ipfs daemon --enable-pubsub-experiment"
+
+# AX Paths
+export AX_LOCATION_COSMOS="/Users/XXX/Documents/Repositories/XXX"
+export AX_LOCATION_COSMOS_POND="/Users/XXX/Documents/Repositories/Cosmos/XXX"
+export AX_LOCATION_COSMOS_BIN="/Users/XXX/Documents/Repositories/Cosmos/XXX"
+export AX_LOCATION_COSMOS_RT="/Users/XXX/Documents/Repositories/Cosmos/XXX"
+export AX_LOCATION_DEPLOYMENT="/Users/XXX/Documents/Repositories/XXX"
+export AX_LOCATION_SPO="/Users/XXX/Documents/Repositories/XXX"
+export DESKTOP="/Users/XXX/Desktop/"
+
+# Folders
+alias cos="cd ~ && cd ${AX_LOCATION_COSMOS}"
+alias pond="cd ~ && cd ${AX_LOCATION_COSMOS_POND}"
+alias bin="cd ~ && cd ${AX_LOCATION_COSMOS_BIN}"
+alias rt="cd ~ && cd ${AX_LOCATION_COSMOS_RT}"
+alias dconf="cd ~ && cd ${AX_LOCATION_DEPLOYMENT}"
+
+# Node
+alias sbo="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run chrome:storybook"
+alias sta="cd ~ && cd ${AX_LOCATION_COSMOS_POND} && npm run chrome:start:dev:transpile-only"
+
+# Notes
+alias notes="cd ${DESKTOP} && vim ax-notes.txt"
+
+# Others
+alias ax-spo="cd ~ && sh ax-XXX.sh"
