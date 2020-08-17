@@ -41,3 +41,7 @@ hub pull-request -i x
 
 ## Grep and show 2 lines before and after the result
 grep -C2
+
+## Repeat a command every one seconf
+while sleep 1; do echo "Hi"; done
+
