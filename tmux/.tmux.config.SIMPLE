@@ -1,37 +1,16 @@
-## Vi like configs
+# Generals
+set -g default-terminal "screen-256color" # colors!
+set -s escape-time 10                     # faster command sequences
+set -sg repeat-time 600                   # increase repeat timeout
+set -g history-limit 10000                 # boost history
 
-# use vi bindings at the `command line` (press C-c to exit)
+# Use vi bindings at the `command line` (press C-c to exit)
 set-option -g status-keys vi
-# use vi bindings in copy-mode
+
+# Use vi bindings in copy-mode
 set-window-option -g mode-keys vi
 
-# use vim-like keys for splits and windows
-bind-key v split-window -h -c "#{pane_current_path}"
-bind-key s split-window -v -c "#{pane_current_path}"
-bind-key h select-pane -L
-bind-key j select-pane -D
-bind-key k select-pane -U
-bind-key l select-pane -R
-
-# resizing panes
-bind-key -r C-j resize-pane -D 2
-bind-key -r C-k resize-pane -U 2
-bind-key -r C-h resize-pane -L 2
-bind-key -r C-l resize-pane -R 2
-
-# v starts a selection and y finishes it in the same way that Space and Enter
+# Use v starts a selection and y finishes it in the same way that Space and Enter
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi 'r' send-keys -X rectangle-toggle
-
-# Set the default terminal mode to 256color mode 
-set-option -g default-terminal "screen-256color"
-
-#set-option -s escape-time 0
-set-option -g history-limit 10000
-
-# https://gist.github.com/tsl0922/d79fc1f8097dde660b34 check for vi style configs
-# pressing C-a locally would send default prefix C-b to the remote session
-set -g prefix C-b
-set -g prefix2 C-w
-bind-key -n C-a send-prefix
