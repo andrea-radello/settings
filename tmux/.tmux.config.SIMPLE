@@ -17,3 +17,8 @@ set-window-option -g mode-keys vi
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-pipe-and-cancel "pbcopy"
 bind-key -T copy-mode-vi 'r' send-keys -X rectangle-toggle
+
+# Start windows numbering at 1
+set -g base-index 1
+# Make pane numbering consistent with windows
+setw -g pane-base-index 1
