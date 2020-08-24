@@ -38,6 +38,7 @@ brew install docker-compose
 brew install postgres
 brew cask install adoptopenjdk
 brew cask install dbeaver-community
+brew install scrcpy
 
 brew cask install adobe-creative-cloud
 brew cask install android-platform-tools
