@@ -47,3 +47,7 @@ while sleep 1; do echo "Hi"; done
 
 # Remove all your local git branches but keep master
 git branch | grep -v "master" | xargs git branch -D
+
+# Pipe to file and at the same time show on screen
+ls -al | tee file.txt
+
