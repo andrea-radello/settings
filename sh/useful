@@ -51,3 +51,6 @@ git branch | grep -v "master" | xargs git branch -D
 # Pipe to file and at the same time show on screen
 ls -al | tee file.txt
 
+# Update all repositories find in a folder
+find . -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;
+
